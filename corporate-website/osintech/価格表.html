@@ -1,0 +1,593 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" rel="stylesheet" href="resources/sheet.css">
+<style type="text/css">.ritz .waffle a {
+    color: inherit;
+}
+
+/* 独自CSSスタート */
+.row-header-wrapper {
+    /* 必要ないものなので display:none */
+    display: none;
+}
+.column-headers-background {
+    /* display:none だと幅がおかしくなる */
+    visibility: hidden;
+}
+.ritz.grid-container {
+    /* 全体を中央に寄せる */
+    display: flex;
+    justify-content: center;
+}
+/* 独自CSS終わり */
+
+.ritz .waffle .s18 {
+    border-bottom: 1px SOLID #efefef;
+    border-right: 1px SOLID #efefef;
+    background-color: #f3f3f3;
+    text-align: left;
+    color: #1a1a1a;
+    font-family: 'Verdana';
+    font-size: 10pt;
+    vertical-align: middle;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s5 {
+    border-right: 1px SOLID #efefef;
+    background-color: #ffffff;
+    text-align: center;
+    color: #1a1a1a;
+    font-family: 'Arial';
+    font-size: 18pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s17 {
+    border-bottom: 1px SOLID #efefef;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #008080;
+    font-family: 'Verdana';
+    font-size: 18pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s3 {
+    background-color: #ed1566;
+    text-align: center;
+    color: #1a1a1a;
+    font-family: 'Verdana';
+    font-size: 10pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s6 {
+    border-bottom: 1px SOLID #f3f3f3;
+    background-color: #ffffff;
+    text-align: center;
+    color: #1a1a1a;
+    font-family: 'Arial';
+    font-size: 18pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s7 {
+    border-right: 1px SOLID #f3f3f3;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #1a1a1a;
+    font-family: 'Arial';
+    font-size: 12pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s12 {
+    border-bottom: 1px SOLID #efefef;
+    border-right: 1px SOLID #efefef;
+    background-color: #ffffff;
+    text-align: center;
+    color: #1a1a1a;
+    font-family: 'Verdana';
+    font-size: 10pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s14 {
+    border-bottom: 1px SOLID #efefef;
+    border-right: 1px SOLID #efefef;
+    background-color: #d9d9d9;
+    text-align: center;
+    color: #1a1a1a;
+    font-family: 'Verdana';
+    font-size: 12pt;
+    vertical-align: middle;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s11 {
+    border-bottom: 1px SOLID #efefef;
+    border-right: 1px SOLID #efefef;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #1a1a1a;
+    font-family: 'Verdana';
+    font-size: 12pt;
+    vertical-align: middle;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s16 {
+    border-bottom: 1px SOLID #efefef;
+    border-right: 1px SOLID #efefef;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #008080;
+    font-family: 'Verdana';
+    font-size: 18pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s9 {
+    border-right: 1px SOLID #f3f3f3;
+    background-color: #ffffff;
+    text-align: center;
+    color: #1a1a1a;
+    font-family: 'Verdana';
+    font-size: 10pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s2 {
+    border-bottom: 1px SOLID #efefef;
+    background-color: #045184;
+    text-align: center;
+    color: #1a1a1a;
+    font-family: 'Verdana';
+    font-size: 10pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s21 {
+    background-color: #ffffff;
+    text-align: center;
+    color: #1a1a1a;
+    font-family: 'Verdana';
+    font-size: 12pt;
+    vertical-align: middle;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s8 {
+    border-right: 1px SOLID #efefef;
+    background-color: #ffffff;
+    text-align: center;
+    color: #1a1a1a;
+    font-family: 'Verdana';
+    font-size: 10pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s23 {
+    background-color: #ffffff;
+    text-align: left;
+    color: #1a1a1a;
+    font-family: 'Verdana';
+    font-size: 12pt;
+    vertical-align: middle;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s4 {
+    border-right: 1px SOLID #efefef;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #1a1a1a;
+    font-family: 'Verdana';
+    font-size: 12pt;
+    vertical-align: middle;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s22 {
+    background-color: #ffffff;
+    text-align: center;
+    color: #1a1a1a;
+    font-family: 'Verdana';
+    font-size: 10pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s19 {
+    border-bottom: 1px SOLID #f3f3f3;
+    border-right: 1px SOLID #f3f3f3;
+    background-color: #ffffff;
+    text-align: center;
+    color: #1a1a1a;
+    font-family: 'Verdana';
+    font-size: 10pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s10 {
+    border-bottom: 1px SOLID #efefef;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #1a1a1a;
+    font-family: 'Verdana';
+    font-size: 12pt;
+    vertical-align: middle;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s15 {
+    border-bottom: 1px SOLID #cccccc;
+    border-right: 1px SOLID #efefef;
+    background-color: #f3f3f3;
+    text-align: left;
+    color: #1a1a1a;
+    font-family: 'Verdana';
+    font-size: 10pt;
+    vertical-align: middle;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s20 {
+    border-bottom: 1px SOLID #f3f3f3;
+    border-right: 1px SOLID #efefef;
+    background-color: #ffffff;
+    text-align: center;
+    color: #1a1a1a;
+    font-family: 'Verdana';
+    font-size: 10pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s1 {
+    border-bottom: 1px SOLID #efefef;
+    background-color: #008080;
+    text-align: center;
+    color: #1a1a1a;
+    font-family: 'Verdana';
+    font-size: 10pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s0 {
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #1a1a1a;
+    font-family: 'Verdana';
+    font-size: 12pt;
+    vertical-align: middle;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle .s13 {
+    border-bottom: 1px SOLID #efefef;
+    border-right: 1px SOLID #f3f3f3;
+    background-color: #ffffff;
+    text-align: center;
+    color: #1a1a1a;
+    font-family: 'Verdana';
+    font-size: 10pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}</style>
+<div class="ritz grid-container" dir="ltr">
+    <table class="waffle no-grid" cellspacing="0" cellpadding="0">
+        <thead>
+        <tr>
+            <th class="row-header freezebar-origin-ltr"></th>
+            <th id="1254238649C0" style="width:160px;" class="column-headers-background">A</th>
+            <th id="1254238649C1" style="width:245px;" class="column-headers-background">B</th>
+            <th id="1254238649C2" style="width:160px;" class="column-headers-background">C</th>
+            <th id="1254238649C3" style="width:160px;" class="column-headers-background">D</th>
+            <th id="1254238649C4" style="width:160px;" class="column-headers-background">E</th>
+            <th id="1254238649C5" style="width:160px;" class="column-headers-background">F</th>
+            <th id="1254238649C6" style="width:160px;" class="column-headers-background">G</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr style="height: 8px">
+            <th id="1254238649R0" style="height: 8px;" class="row-headers-background">
+                <div class="row-header-wrapper" style="line-height: 8px">1</div>
+            </th>
+            <td class="s0" colspan="2"></td>
+            <td class="s1" dir="ltr"></td>
+            <td class="s2" dir="ltr"></td>
+            <td class="s3" dir="ltr"></td>
+            <td class="s3" dir="ltr"></td>
+            <td class="s3" dir="ltr"></td>
+        </tr>
+        <tr style="height: 29px">
+            <th id="1254238649R1" style="height: 29px;" class="row-headers-background">
+                <div class="row-header-wrapper" style="line-height: 29px">2</div>
+            </th>
+            <td class="s0"></td>
+            <td class="s4"></td>
+            <td class="s5" dir="ltr" rowspan="2">for Citizen</td>
+            <td class="s5" dir="ltr" rowspan="2">Pro</td>
+            <td class="s6" dir="ltr" colspan="3">Enterprize</td>
+        </tr>
+        <tr style="height: 29px">
+            <th id="1254238649R2" style="height: 29px;" class="row-headers-background">
+                <div class="row-header-wrapper" style="line-height: 29px">3</div>
+            </th>
+            <td class="s0"></td>
+            <td class="s4"></td>
+            <td class="s7" dir="ltr">Standard <span style="font-size:8pt;">※1</span></td>
+            <td class="s7" dir="ltr">Premium</td>
+            <td class="s7" dir="ltr">On premise</td>
+        </tr>
+        <tr style="height: 20px">
+            <th id="1254238649R3" style="height: 20px;" class="row-headers-background">
+                <div class="row-header-wrapper" style="line-height: 20px">4</div>
+            </th>
+            <td class="s0"></td>
+            <td class="s4"></td>
+            <td class="s8" dir="ltr">社会課題を通じて<br>世界の市民とつながろう</td>
+            <td class="s8" dir="ltr">環境人権分野の専用<br>OSINTツール</td>
+            <td class="s9" dir="ltr" colspan="3">国際動向を読み解き、学習する組織に。</td>
+        </tr>
+        <tr style="height: 81px">
+            <th id="1254238649R4" style="height: 81px;" class="row-headers-background">
+                <div class="row-header-wrapper" style="line-height: 81px">5</div>
+            </th>
+            <td class="s10"></td>
+            <td class="s11"></td>
+            <!--      ボタンの修正はこちら      -->
+            <td class="s12" dir="ltr"><a href="#" style="text-decoration:none;color:white;border-radius:20px;background:#008080;padding:10px 30px;font-weight:bold;">申し込む</a></td>
+            <td class="s12" dir="ltr"><a href="#" style="text-decoration:none;color:white;border-radius:20px;background:#045184;padding:10px 30px;font-weight:bold;">問い合わせ</a></td>
+            <td class="s13" dir="ltr" colspan="3"><a href="#" style="text-decoration:none;color:white;border-radius:20px;background:#ed1566;padding:10px 150px;font-weight:bold;">問い合わせ</a></td>
+        </tr>
+        <tr style="height: 108px">
+            <th id="1254238649R5" style="height: 108px;" class="row-headers-background">
+                <div class="row-header-wrapper" style="line-height: 108px">6</div>
+            </th>
+            <td class="s14" dir="ltr" rowspan="4">国際ルールトレンド</td>
+            <td class="s15" dir="ltr"> 気候変動緩和 (温室効果ガス削減)<br> 淡水資源枯渇<br> マイクロプラスチック汚染<br> 食料システム
+                世界の人権<br> 資本主義を越えて<br> 世界の公教育（2023/04〜）
+            </td>
+            <td class="s16" dir="ltr">⃝</td>
+            <td class="s16" dir="ltr">⃝</td>
+            <td class="s16" dir="ltr">⃝</td>
+            <td class="s16" dir="ltr">⃝</td>
+            <td class="s17" dir="ltr">⃝</td>
+        </tr>
+        <tr style="height: 90px">
+            <th id="1254238649R6" style="height: 90px;" class="row-headers-background">
+                <div class="row-header-wrapper" style="line-height: 90px">7</div>
+            </th>
+            <td class="s15" dir="ltr"> 気候変動適応(温暖化等への対応策)<br> 生物多樣性<br> サーキュラーエコノミー<br> 労働人權</td>
+            <td class="s12"></td>
+            <td class="s16" dir="ltr">⃝</td>
+            <td class="s16" dir="ltr">⃝</td>
+            <td class="s16" dir="ltr">⃝</td>
+            <td class="s16" dir="ltr">⃝</td>
+        </tr>
+        <tr style="height: 89px">
+            <th id="1254238649R7" style="height: 89px;" class="row-headers-background">
+                <div class="row-header-wrapper" style="line-height: 89px">8</div>
+            </th>
+            <td class="s15" dir="ltr"> ブロックチェーン<br> サステナブルファイナンス<br> 個人情報保護<br> インテリジェントビークル(自動運転)</td>
+            <td class="s12"></td>
+            <td class="s12"></td>
+            <td class="s16" dir="ltr">⃝</td>
+            <td class="s16" dir="ltr">⃝</td>
+            <td class="s17" dir="ltr">⃝</td>
+        </tr>
+        <tr style="height: 50px">
+            <th id="1254238649R8" style="height: 50px;" class="row-headers-background">
+                <div class="row-header-wrapper" style="line-height: 50px">9</div>
+            </th>
+            <td class="s15" dir="ltr"> ご契約企業様独自のテーマ</td>
+            <td class="s12"></td>
+            <td class="s12"></td>
+            <td class="s12"></td>
+            <td class="s16" dir="ltr">⃝</td>
+            <td class="s17" dir="ltr">⃝</td>
+        </tr>
+        <tr style="height: 96px">
+            <th id="1254238649R9" style="height: 96px;" class="row-headers-background">
+                <div class="row-header-wrapper" style="line-height: 96px">10</div>
+            </th>
+            <td class="s14" dir="ltr" rowspan="2">機能</td>
+            <td class="s15" dir="ltr"> 国際ルールトレンド速報<br> ルールトレンドテーマ横断検索<br> コミュニケーション機能<br> フィルタ設定<br> アラートメール
+            </td>
+            <td class="s16" dir="ltr">⃝</td>
+            <td class="s16" dir="ltr">⃝</td>
+            <td class="s16" dir="ltr">⃝</td>
+            <td class="s16" dir="ltr">⃝</td>
+            <td class="s17" dir="ltr">⃝</td>
+        </tr>
+        <tr style="height: 115px">
+            <th id="1254238649R10" style="height: 115px;" class="row-headers-background">
+                <div class="row-header-wrapper" style="line-height: 115px">11</div>
+            </th>
+            <td class="s18" dir="ltr"> 分析機能<br> ・高度検索機能<br> ・Treemap<br> ・Social Graph (β)<br> ・Transition<br>
+                ・データCSV出力
+            </td>
+            <td class="s12"></td>
+            <td class="s16" dir="ltr">⃝</td>
+            <td class="s16" dir="ltr">⃝</td>
+            <td class="s16" dir="ltr">⃝</td>
+            <td class="s17" dir="ltr">⃝</td>
+        </tr>
+        <tr style="height: 50px">
+            <th id="1254238649R11" style="height: 50px;" class="row-headers-background">
+                <div class="row-header-wrapper" style="line-height: 50px">12</div>
+            </th>
+            <td class="s14" dir="ltr" colspan="2">専用環境</td>
+            <td class="s12"></td>
+            <td class="s12"></td>
+            <td class="s19"></td>
+            <td class="s20"></td>
+            <td class="s17" dir="ltr">⃝</td>
+        </tr>
+        <tr style="height: 50px">
+            <th id="1254238649R12" style="height: 50px;" class="row-headers-background">
+                <div class="row-header-wrapper" style="line-height: 50px">13</div>
+            </th>
+            <td class="s14" dir="ltr" colspan="2">データチューニング</td>
+            <td class="s12"></td>
+            <td class="s12"></td>
+            <td class="s19" dir="ltr">タグ付けサポート(隔月)</td>
+            <td class="s19" dir="ltr" colspan="2">データチューニング・サポート要望に<br>応じた情報追加(毎月)</td>
+        </tr>
+        <tr style="height: 50px">
+            <th id="1254238649R13" style="height: 50px;" class="row-headers-background">
+                <div class="row-header-wrapper" style="line-height: 50px">14</div>
+            </th>
+            <td class="s14" dir="ltr" colspan="2">サポート・レクチャー</td>
+            <td class="s12" dir="ltr">月次勉強会</td>
+            <td class="s12" dir="ltr">月次勉強会 (優先予約)</td>
+            <td class="s19" dir="ltr">国際動向レクチャー <br>(隔月)</td>
+            <td class="s19" dir="ltr" colspan="2">国際動向レクチャー <br>(毎月)</td>
+        </tr>
+        <tr style="height: 50px">
+            <th id="1254238649R14" style="height: 50px;" class="row-headers-background">
+                <div class="row-header-wrapper" style="line-height: 50px">15</div>
+            </th>
+            <td class="s14" dir="ltr" colspan="2">初期費用（税別）</td>
+            <td class="s12" dir="ltr">無料</td>
+            <td class="s12" dir="ltr">無料</td>
+            <td class="s19" dir="ltr">200,000円</td>
+            <td class="s19" dir="ltr" colspan="2">別途お見積もり</td>
+        </tr>
+        <tr style="height: 50px">
+            <th id="1254238649R15" style="height: 50px;" class="row-headers-background">
+                <div class="row-header-wrapper" style="line-height: 50px">16</div>
+            </th>
+            <td class="s14" dir="ltr" colspan="2">月額費用（税別）</td>
+            <td class="s12" dir="ltr">無料</td>
+            <td class="s12" dir="ltr">15,000円<br>(年払いの場合20%OFF)</td>
+            <td class="s19" dir="ltr">100,000円(2ユーザ)<br>※1,2</td>
+            <td class="s19" dir="ltr">300,000円(5ユーザ)<br>※1</td>
+            <td class="s19" dir="ltr">別途お見積もり</td>
+        </tr>
+        <tr style="height: 20px">
+            <th id="1254238649R16" style="height: 20px;" class="row-headers-background">
+                <div class="row-header-wrapper" style="line-height: 20px">17</div>
+            </th>
+            <td class="s21" dir="ltr"></td>
+            <td class="s21" dir="ltr"></td>
+            <td class="s22" dir="ltr"></td>
+            <td class="s22" dir="ltr"></td>
+            <td class="s22" dir="ltr"></td>
+            <td class="s22" dir="ltr"></td>
+            <td class="s22" dir="ltr"></td>
+        </tr>
+        <tr style="height: 20px">
+            <th id="1254238649R17" style="height: 20px;" class="row-headers-background">
+                <div class="row-header-wrapper" style="line-height: 20px">18</div>
+            </th>
+            <td class="s23" dir="ltr" colspan="7">※1: 持続可能な取り組みをされている中小企業の方については、割引を行っております。</td>
+        </tr>
+        <tr style="height: 20px">
+            <th id="1254238649R18" style="height: 20px;" class="row-headers-background">
+                <div class="row-header-wrapper" style="line-height: 20px">19</div>
+            </th>
+            <td class="s23" dir="ltr" colspan="7">※2: 1ユーザー追加毎に15000円。 最低6ヶ月、以降1か月単位での契約となります</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
